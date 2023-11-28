@@ -20,21 +20,19 @@ const router = createBrowserRouter([
       {
         path: "businesses",
         element: <Businesses />,
+      },
+      { 
+        // path: ":bizid", will use this once we have the data to upload
+        path: "businesses/1",
+        element: <Biz />,
         children: [
           {
-            // path: ":bizid", will use this once we have the data to upload
-            path: "1",
-            element: <Biz />,
-            children: [
-              {
-                path: "info",
-                element: <Info />
-              },
-              {
-                path: "lead",
-                element: <Lead />
-              }
-            ]
+            path: "info",
+            element: <Info />
+          },
+          {
+            path: "lead",
+            element: <Lead />
           }
         ]
       },
