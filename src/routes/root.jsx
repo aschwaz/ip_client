@@ -5,13 +5,15 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from '../assets/instapitchlogo.png'
 
 // needed for navbar and needs to be customized to our pages as well as updated current for page clicked on
-// NOTE: FOR NOW I'LL USE THIS AS A WAY FOR US TO NAVIGATE TOO ALL OF OUR PAGES
+// NOTE: THE NAVBAR IS ADDING THE HREF TO THE PREVIOUS PAGE SO IT WILL BREAK)
 const navigation = [
   { name: 'Businesses', href: 'businesses', current: true },
 //   we'll need to updated biz once we have biz id
-  { name: 'Biz', href: 'businesses/1', current: false },
-  { name: 'Lead', href: 'lead', current: false },
-  { name: 'Info', href: 'info', current: false },
+  { name: 'Biz', href: '1', current: false },
+  { name: 'Lead', href: '1/lead', current: false },
+  { name: 'Info', href: '1/info', current: false },
+  { name: 'Signup', href: 'signup', current: false },
+  { name: 'Login', href: 'login', current: false },
 ]
 // needed for navbar(not exactly sure what this code does)
 function classNames(...classes) {
