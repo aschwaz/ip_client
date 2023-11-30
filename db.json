@@ -1,121 +1,46 @@
 {
-  "posts": [
+  "lead": [
     {
       "id": 1,
-      "reward": 240,
-      "leadName": "Quinn Stone",
-      "leadCategory": "Real Estate Agent",
-      "leadState": "CA",
-      "leadCity": "Alameda",
-      "leadUrls": [
-        "",
-        ""
-      ],
-      "leadPhone": "(510)326-9697",
-      "leadEmail": "quinn@quinnstone.com",
-      "contacts": [
-        {
-          "title": "Owner",
-          "name": "Quinn",
-          "phone": "(510)326-9697",
-          "email": "quinn@quinnstone.com"
-        }
-      ],
-      "leadNotes": [
-        "",
-        "went well quinn wanst to buy"
-      ],
-      "leadStage": "Demo"
+      "product_id": 1,
+      "salesperson_id": 1,
+  
+      "lead_name": "lead name",
+      "lead_status": "lead status",
+      "lead_notes": "lead notes",
+      "lead_contact_name": "lead contact name",
+      "lead_contact_email": "lead contact email",
+      "lead_contact_phone": "lead contact phone",
+      "lead_city": "lead city",
+      "lead_state": "lead state",
+      "website_url": "lead website url",
+      "yelp_url": "lead yelp",
+      "facebook_url": "lead facebook",
+      "instagram_url":"lead instagram",
+      "linkedin_url": "linkedin url",
+      "ai_scripts": "ai scripts"
+
     },
     {
       "id": 2,
-      "reward": 240,
-      "leadName": "Ashwin Dentist",
-      "leadCategory": "Dentist",
-      "leadUrls": [
-        "https://static.wixstatic.com/media/d851e9_8ba1ef4409864511a2ffb12f8d701b49~mv2.png/v1/fill/w_1200,h_3862,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/www_elementsindesign_com_.png",
-        "https://static.wixstatic.com/media/d851e9_833b125884c64673abc45eaaca37199a~mv2.png/v1/fill/w_442,h_842,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/www_pacheightsdentist_com_.png"
-      ],
-      "leadPhone": "(714)213-1234",
-      "leadEmail": "josh@gmail.com",
-      "contacts": [],
-      "leadNotes": [
-        "",
-        "THis guy does root caneals would be good fit",
-        "test",
-        "i called and josh wasnt in, they said to call around 5pm",
-        "i spoke with josh hes interested we setup an appt for tomorrow at 10am",
-        "just pitched josh he needs tot alke to partner"
-      ],
-      "leadStage": "Unvetted"
-    },
-    {
-      "id": 3,
-      "reward": 240,
-      "leadName": "Caddillac Bar & Grill",
-      "leadCategory": "Restaurant",
-      "leadUrls": [
-        "https://static.wixstatic.com/media/d851e9_8ba1ef4409864511a2ffb12f8d701b49~mv2.png/v1/fill/w_1200,h_3862,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/www_elementsindesign_com_.png",
-        "https://static.wixstatic.com/media/d851e9_833b125884c64673abc45eaaca37199a~mv2.png/v1/fill/w_442,h_842,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/www_pacheightsdentist_com_.png"
-      ],
-      "leadPhone": "(714)313-1234",
-      "leadEmail": "1josh@gmail.com",
-      "contacts": [],
-      "leadNotes": [
-        ""
-      ],
-      "leadStage": "unvetted"
-    },
-    {
-      "id": 4,
-      "reward": 240,
-      "leadName": "Kenneth Asire Plumbing",
-      "leadCategory": "Plumbing",
-      "leadUrls": [
-        "https://static.wixstatic.com/media/d851e9_8ba1ef4409864511a2ffb12f8d701b49~mv2.png/v1/fill/w_1200,h_3862,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/www_elementsindesign_com_.png",
-        "https://static.wixstatic.com/media/d851e9_833b125884c64673abc45eaaca37199a~mv2.png/v1/fill/w_442,h_842,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/www_pacheightsdentist_com_.png"
-      ],
-      "leadPhone": "(714)313-1234",
-      "leadEmail": "1josh@gmail.com",
-      "contacts": [],
-      "leadNotes": [
-        ""
-      ],
-      "leadStage": "unvetted"
-    },
-    {
-      "id": 5,
-      "reward": 240,
-      "leadName": "Elements by Design",
-      "leadCategory": "interior design",
-      "leadUrls": [
-        "https://static.wixstatic.com/media/d851e9_8ba1ef4409864511a2ffb12f8d701b49~mv2.png/v1/fill/w_1200,h_3862,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/www_elementsindesign_com_.png",
-        "https://static.wixstatic.com/media/d851e9_833b125884c64673abc45eaaca37199a~mv2.png/v1/fill/w_442,h_842,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/www_pacheightsdentist_com_.png"
-      ],
-      "leadPhone": "(714)313-1234",
-      "leadEmail": "1josh@gmail.com",
-      "contacts": [],
-      "leadNotes": [
-        ""
-      ],
-      "leadStage": "unvetted"
-    },
-    {
-      "id": 6,
-      "reward": 240,
-      "leadName": "Elements by Design",
-      "leadCategory": "Interior Design",
-      "leadUrls": [
-        "https://static.wixstatic.com/media/d851e9_8ba1ef4409864511a2ffb12f8d701b49~mv2.png/v1/fill/w_1200,h_3862,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/www_elementsindesign_com_.png",
-        ""
-      ],
-      "leadPhone": "(714)313-1234",
-      "leadEmail": "1josh@gmail.com",
-      "contacts": [],
-      "leadNotes": [
-        ""
-      ],
-      "leadStage": "unvetted"
+      "product_id": 1,
+      "salesperson_id": 1,
+  
+      "lead_name": "lead name2",
+      "lead_status": "lead status2",
+      "lead_notes": "lead notes2",
+      "lead_contact_name": "lead contact name2",
+      "lead_contact_email": "lead contact email2",
+      "lead_contact_phone": "lead contact phone2",
+      "lead_city": "lead city2",
+      "lead_state": "lead state2",
+      "website_url": "lead website url2",
+      "yelp_url": "lead yelp2",
+      "facebook_url": "lead facebook2",
+      "instagram_url":"lead instagram2",
+      "linkedin_url": "linkedin url2",
+      "ai_scripts": "ai scripts2"
+
     }
   ],
   "users": [

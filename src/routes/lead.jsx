@@ -18,7 +18,7 @@ export default function Lead() {
     // const [search, setSearch] = useState("")
 
     useEffect(() => {
-        fetch('http://localhost:3000/posts')
+        fetch('http://localhost:3000/lead')
         .then(res => res.json())
         .then(data => setLeads(data))
       }, [])
