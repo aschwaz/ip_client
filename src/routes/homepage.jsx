@@ -225,3 +225,9 @@ export default function Homepage() {
         </div>
     )
 }
+
+export const homepageLoader = async({params}) => {
+    const homepageResponse = await fetch(`${url}/api/homepage`)
+    const homepage = await homepageResponse.json()
+    return homepage
+}
