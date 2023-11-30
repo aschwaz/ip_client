@@ -259,3 +259,10 @@ export default function Root() {
         </div>
     )
 }
+
+export const rootLoader = async({params}) => {
+    rootResponse = await fetch(`${url}/api/root`)
+    root = await rootResponse.json()
+    return root
+
+}

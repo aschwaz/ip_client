@@ -45,3 +45,9 @@ export default function SignUp() {
 </section>
     )
 }
+
+export const signupLoader = async({params}) => {
+    signupResponse = await fetch(`${url}/api/signup`)
+    signup = await signupResponse.json()
+    return signup
+}
