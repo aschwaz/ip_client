@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, Router, RouterProvider } from "react-router-dom";
-import Root from "./routes/root";
-import Login from './routes/login';
-import Businesses from './routes/businesses';
-import Biz from './routes/biz';
-import Info from './routes/info';
-import Lead from './routes/lead';
-import Signup from './routes/signup';
-import Homepage from './routes/homepage';
+import Root, { rootLoader } from "./routes/root";
+import Login, {loginLoader} from './routes/login';
+import Businesses, {businessesLoader} from './routes/businesses';
+import Biz, {Biz} from './routes/biz';
+import Info, {infoLoader} from './routes/info';
+import Lead, {leadLoader} from './routes/lead';
+import Signup, {signupLoader} from './routes/signup';
+import Homepage, {homepageLoader} from './routes/homepage';
+
 
 const url = "http://localhost:5173"
 
