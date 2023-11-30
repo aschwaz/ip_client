@@ -92,4 +92,10 @@ const people = [
      </>
     )
   }
+
+  export const infoLoader = async({params}) => {
+    infoResponse = await fetch(`${url}/api/info`)
+    info = await infoResponse.json()
+    return info
+  }
   

@@ -167,3 +167,10 @@ export default function Businesses() {
         </div>
     )
 }
+
+export const businessesLoader = async({params}) => {
+    const businessesResponse = await fetch(`${url}/api/businesses`)
+    const businesses = await businessesResponse.json()
+
+    return businesses
+}

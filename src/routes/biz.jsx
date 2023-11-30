@@ -8,3 +8,12 @@ export default function Biz() {
         </div>
     )
 }
+
+
+// NEEDS ACTUAL LINK TO FETCH FROM 
+export const bizLoader = async({params}) => {
+    const bizResponse = await fetch(`${url}/api/businesses/${params.bizid}`)
+    const bizs = await bizResponse.json()
+
+    return bizs
+}

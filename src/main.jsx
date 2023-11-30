@@ -16,37 +16,45 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    loader: rootLoader,
     children: [
       {
         path: "businesses",
         element: <Businesses />,
+        loader: businessesLoader
       },
       { 
         // path: ":bizid", will use this once we have the data to upload
         path: "1",
         element: <Biz />,
+        loader: bizLoader,
         children: [
           {
             path: "info",
-            element: <Info />
+            element: <Info />,
+            loader: infoLoader
           },
           {
             path: "lead",
-            element: <Lead />
+            element: <Lead />,
+            loader: leadLoader
           }
         ]
       },
       {
         path: "login",
         element: <Login />,
+        loader: loginLoader
       },
       {
         path: "signup",
         element: <Signup />,
+        loader: signupLoader
       },
       {
         path: "/",
         element: <Homepage />,
+        loader: homepageLoader
       }
     ]
   }

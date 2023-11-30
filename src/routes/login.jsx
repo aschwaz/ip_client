@@ -147,3 +147,9 @@ export default function Example() {
     </>
   )
 }
+
+export const loginLoader = async({params}) => {
+  loginResponse = await fetch(`${url}/api/login`)
+  login = await loginResponse.json()
+  return login
+}
