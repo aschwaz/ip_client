@@ -1,3 +1,7 @@
+{/* //////////////////////////////////////////////////// */}
+{/* /// AI DIV DOES NOT RESET WHEN THE LEAD IS CHANGED / */}
+{/* //////////////////////////////////////////////////// */}
+
 
 // import Search from './Search'
 // import PostsContainer from './lead_sub_components/postscontainer'
@@ -290,9 +294,9 @@ export default function Lead() {
                         </div>
                     </div>    
                         
-                    <div className='flex justify-between text-gray-300 pb-6 '> 
-                        <button className='bg-gray-900 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium' onClick={() => handleLeadChange('prev')}>Previous</button>
-                        <button className='bg-gray-900 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium' onClick={() => handleLeadChange('next')}>Next</button>
+                    <div className='flex justify-between text-gray-300 p-6 mx-auto max-w-7xl '> 
+                        <button className='bg-gray-900 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 sm:text-lg lg:text-2xl' onClick={() => handleLeadChange('prev')}>Previous</button>
+                        <button className='bg-gray-900 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 sm:text-lg lg:text-2xl' onClick={() => handleLeadChange('next')}>Next</button>
                     </div>  
                 </div>
             ): (
