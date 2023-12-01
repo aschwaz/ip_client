@@ -36,12 +36,13 @@ const people = [
   export default function Info() {
     return (
     <>
+    {/* <h1>Hi I'm info!</h1> */}
         <div className="bg-white py-6 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:mx-0">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Start Earning</h2>
                     <p className="mt-6 text-lg leading-8 text-gray-600">
-                    Below you'll find all the information you'll need to confidently start earning additional income via your partnership with COMPANY NAME.
+                    Below you'll find all the information you'll need to confidently start earning additional income via your partnership with Rejig.
                     </p>
                 </div>
                 <ul
@@ -78,14 +79,6 @@ const people = [
                     </li>
                     ))}
                 </ul>
-            </div>
-            <div className="flex justify-center items-center mx-auto p-6 max-w-7xl sm:px-6 lg:px-8">
-                <a
-                    href="leads"
-                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:text-lg py5 lg:px-8"
-                >
-                    Start Selling
-                </a>
             </div>
         </div>
      

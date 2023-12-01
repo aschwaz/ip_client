@@ -7,7 +7,7 @@ const products = [
     {
         id: 1,
         name: 'Rejig.ai',
-        href: '/product',
+        href: '/1',
         price: '$240',
         description: 'Rejig monitors all your content channels, customer reviews, industry news, trends, and uses AI to automagically create & publish content to social media.',
         options: 'Pay Per Transaction*',
