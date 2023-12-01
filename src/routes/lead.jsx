@@ -312,8 +312,8 @@ export default function Lead() {
     )
 }
 
-// export const leadLoader = async({params}) => {
-//     leadsResponse = await fetch(`${url}/api/leads`)
-//     leads = await leadsResponse.json()
-//     return leads
-// }
+export const leadLoader = async({params}) => {
+    leadsResponse = await fetch(`${url}/api/leads`)
+    leads = await leadsResponse.json()
+    return leads
+}
