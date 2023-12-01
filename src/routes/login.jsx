@@ -8,6 +8,42 @@ function handlePassword(e) {
 
 }
 
+function handleLoginFormSubmit(e) {
+  e.preventDefault()
+  const email = e.target.email.value
+  const password = e.target.password.value
+  // Check if fields are empty
+  if (!email || !password) {
+    alert("Please fill all fields")
+    return
+  }
+  const data = {email, password}
+  fetch(`http://localhost:5000/login`, {
+    method: "POST",
+    credentials: "include",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      email_address: email,
+      password: password
+    })
+  }).then(res => res.json())
+  .then(data => {
+    console.log(data)
+    if (data.error) {
+      alert(data.error)
+    } else {
+      alert("Login successful")
+      window.location.href = "/businesses"
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    alert("Login failed")
+  })
+}
+
 
 export default function Example() {
   return (
@@ -34,7 +70,7 @@ export default function Example() {
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]">
           <div className="bg-white px-6 py-12 shadow sm:rounded-lg sm:px-12">
-            <form className="space-y-6" action="#" method="POST">  
+            <form className="space-y-6" action="#" method="POST" onSubmit={handleLoginFormSubmit}>  
               <div>
                 <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                   Email address

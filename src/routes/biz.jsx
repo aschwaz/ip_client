@@ -35,7 +35,13 @@ export default function Biz() {
     const [currentLeadIndex, setCurrentLeadIndex] = useState(0);
 
     useEffect(() => {
-        fetch('http://localhost:3000/lead')
+        fetch('http://localhost:5000/api/leads', {
+            method: "GET",
+            credentials: "include",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
             .then(res => res.json())
             .then(data => setLeads(data));
     }, []);
